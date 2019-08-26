@@ -32,7 +32,6 @@ vector<int> push(vector<int> stack, int& top, int x){
 
 vector<int> pop(vector<int> stack, int& top){
     //removing element from the top of the stack
-    
     if(stackEmpty(stack, top)){
         cout << "Error: stack underflow";
         return stack;
@@ -40,8 +39,7 @@ vector<int> pop(vector<int> stack, int& top){
     
     else{
         stack.pop_back();
-        top = top - 1;
-        
+        top = top - 1; 
         return stack;
     }
 }
@@ -56,14 +54,15 @@ int main() {
     }
     cout << endl;
     
+    //adding element
     stack = push(stack, top, 6);
-    
     cout << "Pushed stack: ";
     for(int i=0; i<top; i++){
         cout << stack[i] << " ";
     }
     cout << endl;
     
+    //removing element
     stack = pop(stack, top);
     
     cout << "Popped stack: ";
