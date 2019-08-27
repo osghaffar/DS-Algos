@@ -48,7 +48,6 @@ vector<int> pop(vector<int> stack, int& top){
     }
     
     else{
-        
         stack.pop_back();
         
         top = top - 1; 
