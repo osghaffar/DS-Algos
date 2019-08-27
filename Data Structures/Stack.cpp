@@ -4,9 +4,9 @@
     Using vector rather than array
     
     Functions:
-        stackEmpty(): returns boolean value 
-        push(): adds an element to the top of the stack and returns stack
-        pop(): removes the element at the top of the stack and returns stack
+       - stackEmpty(): returns boolean value 
+       - push(): adds an element to the top of the stack and returns stack
+       - pop(): removes the element at the top of the stack and returns stack
 **/
 
 #include <iostream>
