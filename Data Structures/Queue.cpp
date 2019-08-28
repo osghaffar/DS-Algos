@@ -13,12 +13,13 @@ using namespace std;
 
 vector<int> enqueue(vector<int> queue, int& head, int& tail, int x){
     if(tail == queue.size()){
+        
         cout << "Error: Queue overflow" << endl;
+        
         return queue;
     }
     
     else{    
-        cout << tail << endl;
         tail = tail + 1;
         
         queue[tail] = x;
@@ -30,7 +31,9 @@ vector<int> enqueue(vector<int> queue, int& head, int& tail, int x){
 
 vector<int> dequeue(vector<int> queue, int& head, int& tail){
     if(head == tail){
+        
         cout << "Error: Queue underflow" << endl;
+        
         return queue;
     }
     
@@ -57,6 +60,7 @@ int main(){
     }
     cout << endl;
     
+    //adding an element to the end of queue
     queue = enqueue(queue, head, tail, 6);
     
     cout << "Add element: ";
@@ -67,6 +71,7 @@ int main(){
     }
     cout << endl;
     
+    //removing an element from the head of queue
     queue = dequeue(queue, head, tail);
     
     cout << "Delete element: ";
